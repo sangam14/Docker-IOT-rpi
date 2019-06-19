@@ -2,6 +2,31 @@
 ![](https://github.com/sangam14/Docker-IOT-rpi/blob/master/DockerIOTrpi.gif)
 
 
+
+
+# Why the IoT Needs Docker
+That’s somewhat surprising. Containers are well-positioned to address some of the main challenges that developers face when deploying software to IoT devices:
+
+# Minimal hardware resources. 
+Many IoT devices lack powerful computing and memory resources. Their ability to process software updates is therefore limited. Containers can help on this front because installing a new container image does not require much computing power. An IoT device needs simply to download an image, put it wherever it’s going to live and remove the old image. Configuration processing is minimal.
+
+# Geographic distribution. 
+In some use cases, IoT devices are spread across a large geographic area. Delivering software to them from a single central repository may not work well. With Docker, it’s easy to spin up image registries in multiple locations to serve the entire network well.
+
+# Limited or sporadic network access. 
+Despite the implications of the term “internet of things,” not all devices on the internet of things are well-connected to the internet. They may have limited network bandwidth, or be online only occasionally. Docker can help to deliver software updates under these circumstances because when container images are updated, Docker downloads only the parts of the image that have changed. (Resin.io is taking this efficiency a step further through delta updates, which enable an even more selective download process when updating a container image.)
+
+# Widely varying device environments.
+The software that runs on an IoT device could be almost anything. The diversity of software configurations on IoT devices would normally make application installation difficult, because applications would have to be configured for each type of environment if installed via traditional methods. With containers, however, the operating system version and other software variables are much less important. As long as the device runs some kind of Linux distribution and has a container runtime, you can install a containerized application on it without special configuration.
+
+# prepare the circuit:
+
+
+
+
+
+
+
 # Install Docker on Raspberry pi 
 
 
@@ -103,7 +128,12 @@ OR
 ```
  
  
+ slides:
+ https://www.slideshare.net/sangambiradar370/docker-on-iot-dockercon19-sfo-recap-announcements-bangalore
  
+ # Contributor: 
+ [sangam biradar](https://twitter.com/BiradarSangam)
  
+ https://engineitops.icu
 
 
